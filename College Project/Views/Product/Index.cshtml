@@ -1,0 +1,22 @@
+﻿@using College_Project.Models.Domain
+@{
+    ViewData["Title"] = "Products Page";
+}
+
+@model IEnumerable<Product>
+
+<div class="product-container">
+    <h1 class="page-title">Products</h1>
+
+    <div class="product-grid">
+        @foreach (var product in Model)
+        {
+            <div class="product-card">
+                <img src="@product.ImageURL" alt="@product.Name" class="product-image">
+                <h2 class="product-name">@product.Name</h2>
+                <p class="product-description">@product.ShortDescription</p>
+                <p class="product-price">£@product.Price.ToString("F2")</p>
+            </div>
+        }
+    </div>
+</div>
