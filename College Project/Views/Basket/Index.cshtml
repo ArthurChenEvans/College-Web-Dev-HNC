@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Your Basket";
+}
+
+<div class="basket-container">
+    <h1>Your Basket</h1>
+
+    <div class="basket-content">
+        <div class="product-list">
+            @for (int i = 0; i < 6; i++)
+            {
+                <div class="product-item">
+                    <img src="/path/to/placeholder-image.jpg" alt="Product Image" class="product-image">
+                    <div class="product-details">
+                        <h3>Product Name @(i + 1)</h3>
+                        <p>Short Description for Product @(i + 1)</p>
+                    </div>
+                    <div class="product-quantity">1</div>
+                    <div class="product-price">£10.00</div>
+                </div>
+            }
+        </div>
+
+        <div class="order-summary">
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span>£60.00</span>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span>£72.00</span>
+            </div>
+            <a asp-controller="Checkout" asp-action="Index" class="checkout-button">Checkout</a>
+        </div>
+    </div>
+</div>
