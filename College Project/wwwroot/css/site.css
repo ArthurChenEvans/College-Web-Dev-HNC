@@ -192,7 +192,7 @@ footer {
 /* Basket Page */
 .basket-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 20px;
 }
 
@@ -212,9 +212,9 @@ h1 {
 .product-item {
     display: flex;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #F1F1F1;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
 }
 
@@ -246,23 +246,18 @@ h1 {
 
 .order-summary {
     width: 250px;
-    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
 }
 
-.subtotal, .total {
+.total {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-.total {
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #ddd;
 }
 
 .checkout-button {
