@@ -14,9 +14,6 @@ namespace College_Project.Controllers
 
         public async Task<IActionResult> Index(string categoryFilter, string searchQuery)
         {
-            ViewBag.CategoryFilter = categoryFilter;
-            ViewBag.SearchQuery = searchQuery;
-
             var allProducts = await _repository.GetAllAsync(categoryFilter, searchQuery);
 
             return View(allProducts);
